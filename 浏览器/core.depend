@@ -1,0 +1,149 @@
+# depslib dependency file v1.0
+1415262370 source:f:\code\core\main.cpp
+	<iostream>
+	<string>
+	<map>
+	"parser_css.h"
+	"HTMLReader.h"
+	"Document.h"
+	<iostream>
+	"RenderTree.h"
+
+1415187252 f:\code\core\parser_css.h
+	<map>
+	<string>
+	<list>
+	<vector>
+	<stack>
+	"CommonClass.h"
+
+1415264200 source:f:\code\core\parser_css.cpp
+	"parser_css.h"
+	<fstream>
+	<iostream>
+	<string>
+	<map>
+	<sstream>
+
+1415026091 source:f:\code\core\parser_html.cpp
+	"parser_html.h"
+
+1415028663 f:\code\core\parser_html.h
+	<string>
+
+1415151215 source:f:\code\core\htmlreader.cpp
+	"HTMLReader.h"
+	<fstream>
+	<cctype>
+	<iostream>
+
+1415151215 f:\code\core\htmlreader.h
+	<string>
+	"Document.h"
+	"RenderNode.h"
+
+1415154347 f:\code\core\document.h
+	<string>
+	"RenderNode.h"
+
+1415193661 f:\code\core\rendernode.h
+	<iostream>
+	<string>
+	<vector>
+	"parser_css.h"
+
+1415177346 source:f:\code\core\rendernode.cpp
+	<vector>
+	"RenderNode.h"
+
+1415151215 source:f:\code\core\document.cpp
+	"Document.h"
+
+1415264462 source:f:\code\core\rendertree.cpp
+	"RenderTree.h"
+	"CommonClass.h"
+	<algorithm>
+
+1415264671 f:\code\core\rendertree.h
+	<string>
+	"parser_css.h"
+	"Document.h"
+	"HTMLReader.h"
+	"RenderNode.h"
+
+1415235787 f:\code\core\commonclass.h
+
+1415151216 source:k:\first\htmlreader.cpp
+	"HTMLReader.h"
+	<fstream>
+	<cctype>
+	<iostream>
+
+1415151216 k:\first\htmlreader.h
+	<string>
+	"Document.h"
+	"RenderNode.h"
+
+1415154348 k:\first\document.h
+	<string>
+	"RenderNode.h"
+
+1415193662 k:\first\rendernode.h
+	<iostream>
+	<string>
+	<vector>
+	"parser_css.h"
+
+1415187254 k:\first\parser_css.h
+	<map>
+	<string>
+	<list>
+	<vector>
+	<stack>
+	"CommonClass.h"
+
+1415235788 k:\first\commonclass.h
+
+1415177348 source:k:\first\rendernode.cpp
+	<vector>
+	"RenderNode.h"
+
+1415264672 source:k:\first\rendertree.cpp
+	"RenderTree.h"
+	"CommonClass.h"
+	<algorithm>
+
+1415264672 k:\first\rendertree.h
+	<string>
+	"parser_css.h"
+	"Document.h"
+	"HTMLReader.h"
+	"RenderNode.h"
+
+1415262372 source:k:\first\main.cpp
+	<iostream>
+	<string>
+	<map>
+	"parser_css.h"
+	"HTMLReader.h"
+	"Document.h"
+	<iostream>
+	"RenderTree.h"
+
+1415264202 source:k:\first\parser_css.cpp
+	"parser_css.h"
+	<fstream>
+	<iostream>
+	<string>
+	<map>
+	<sstream>
+
+1415026092 source:k:\first\parser_html.cpp
+	"parser_html.h"
+
+1415028664 k:\first\parser_html.h
+	<string>
+
+1415151216 source:k:\first\document.cpp
+	"Document.h"
+

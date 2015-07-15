@@ -1,0 +1,101 @@
+#ifndef PARSER_CSS_H_
+#define PARSER_CSS_H_
+
+#include <map>
+#include <string>
+
+namespace css{
+
+class parser {
+public:
+    parser(std::string filename);
+    ~parser();
+
+private:
+    struct property_node {
+        std::string m_name; //属性名字
+        std::string m_value; //属性值
+        struct property_node *next; //下一个属性
+    };
+    void BuildStyleSheet(std::string filename);
+    bool Joint(parser &x);
+    typedef std::map<std::string,struct property_node*> styleSheetMap;
+    styleSheetMap styleSheet;
+};
+
+}
+
+#endif
+
+
+#include "parser_css.h"
+#include <fstream>
+#include <iostream>
+#include <regex>
+#include <string>
+
+
+namespace css{
+parser::parser(std::string filename)
+{
+    BuildStyleSheet(filename);
+}
+
+parser::~parser()
+{
+
+}
+
+bool parser::Joint(parser &x)
+{
+    return true;
+}
+
+inline void parser::BuildStyleSheet(std::string filename)
+{
+    std::ifstream input(filename.c_str());
+    std::string s;
+    std::string temp;
+    std::smatch result;
+    std::regex pattern("(.*){");
+    while(getline(input,temp)) {
+        s += temp;
+    }
+    std::regex_match(s,result,pattern);
+
+        for(size_t i=0;i<result.size();++i) {
+            std::cout<<result[i]<<std::endl;
+        }
+
+
+   // std::cout<<s<<std::endl;
+}
+
+}
+
+
+#include <iostream>
+#include <string>
+#include <map>
+#include "parser_css.h"
+
+using namespace std;
+
+/*struct property_node {
+    string name; //属性名字
+    string value; //属性值
+    struct property_node *next; //下一个属性
+};
+
+struct selector_node {
+    string id; //
+    string class_t;
+    string element;
+    struct selector_node *next;
+};*/
+int main(void)
+{
+    css::parser pser("test1.txt");
+ //   cout << "Hello world!" << endl;
+    return 0;
+}

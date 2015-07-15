@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1414322417 source:f:\code\seedcup\main.cpp
+	<iostream>
+	<fstream>
+	<cstdio>
+	<stdexcept>
+	"RegexpToNfa.h"
+
+1414323420 f:\code\seedcup\regexptonfa.h
+	<vector>
+	<string>
+	<map>
+	<cstring>
+	<cstdlib>
+	<stdexcept>
+	<stack>
+
+1414329539 source:f:\code\seedcup\regexptonfa.cpp
+	"RegexpToNfa.h"
+	<iostream>
+
